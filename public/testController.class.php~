@@ -1,0 +1,11 @@
+<?php
+class testController{
+function show(){
+$testModel = new testModel();//選取合適的模型
+$data = $testModel->get();//獲取相應的數據
+$testView = new testView();//選擇相應的視圖
+$testView->display($data);//展示給用戶
+var_dump($testModel);
+}
+}
+?>
